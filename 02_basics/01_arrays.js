@@ -12,8 +12,8 @@ const myArr2 = new Array(1, 2, 3, 4)
 // myArr.push(7)
 // myArr.pop()
 
-// myArr.unshift(9)
-// myArr.shift()
+// myArr.unshift(9) //0th index pr add thay
+// myArr.shift() //0th index pr thi remove
 
 // console.log(myArr.includes(9));
 // console.log(myArr.indexOf(3));
@@ -34,6 +34,19 @@ console.log(myn1);
 console.log("B ", myArr);
 
 
-const myn2 = myArr.splice(1, 3)
+const myn2 = myArr.splice(1, 3) //element remove krva mate splice(start, deletecount) 
 console.log("C ", myArr);
-console.log(myn2);
+console.log(myn2); //index 1 thi 3 element delete thase
+
+
+splice(start, deleteCount, item1, item2)
+const months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+// Inserts at index 1
+console.log(months);
+// Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+months.splice(4, 1, 'May');
+// Replaces 1 element at index 4
+console.log(months);
+// Expected output: Array ["Jan", "Feb", "March", "April", "May"]
